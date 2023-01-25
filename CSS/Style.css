@@ -1,0 +1,140 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* --------------------------------------------------------------login-page--------------------------------------------------------------  */
+.main_login_page {
+    background-color: #f4f4f4;
+}
+
+/* --------------------------------------------------------------left-side--------------------------------------------------------------  */
+
+.main_login_page {
+    display: flex;
+    height: 100vh;
+}
+
+.main_left {
+    margin: 9% 5% 0% 7%;
+}
+
+.main_login_image {
+    /* display: contents; */
+    border-radius: 50%;
+    width: 80%;
+    box-shadow: 0px 0px 0px 12px white;
+}
+
+/* --------------------------------------------------------------right-side--------------------------------------------------------------  */
+
+.main_right {
+    margin: 9% 5% 0% 0%;
+}
+
+.company_logo {
+    display: flex;
+}
+
+.logo {
+    width: 9%;
+}
+
+.company_logo h1 {
+    font-size: 4.5vh;
+    padding: 1% 0% 0% 2%;
+    color: #143141;
+}
+
+.content_expert {
+    margin: 3% 0% 3.5% 0%;
+}
+
+.content_expert p {
+    font-size: 4vh;
+    padding: 0% 40% 0% 0%;
+}
+
+#extert_highlite {
+    color: #c8242f;
+}
+
+.login_account_div {
+    margin: 0% 0% 3% 0%;
+}
+
+.login_account_div p {
+    font-size: 3vh;
+
+}
+
+/* --------------------------------------------------------------login input CSS--------------------------------------------------------------  */
+
+.input_username {
+    margin: 0% 0% 3% 0%;
+}
+
+.input_password {
+    margin: 0% 0% 3% 0%;
+}
+
+#user {
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: solid;
+
+    background-color: transparent;
+    color: gray;
+    width: 44%;
+    padding: 1.5% 2% 1.5% 2%;
+}
+
+#userpassword {
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: transparent;
+    color: gray;
+    width: 44%;
+    padding: 1.5% 2% 1.5% 2%;
+}
+
+/* --------------------------------------------------------------login button--------------------------------------------------------------  */
+
+.login_button {
+    cursor: pointer;
+    border: none;
+    background-color: #c8242f;
+    color: white;
+    font-weight: bold;
+    border-radius: 36px;
+    padding: 10px 38px;
+    font-size: 14px;
+    margin: 0% 0% 3% 0%;
+}
+
+.login_button_div a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    margin: 0% 0% 0% 16%;
+}
+
+/* -----------------------------------------------------------------register--------------------------------------------------------------  */
+
+.register_here {
+    display: flex;
+}
+
+.register_here p {
+    color: gray;
+    font-size: 14px;
+}
+
+.register_here a {
+    text-decoration: none;
+    color: #c8242f;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------  */
