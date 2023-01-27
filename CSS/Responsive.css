@@ -1,0 +1,201 @@
+/* ----------------------------------------------------------Login responsive------------------------------------------------------------ */
+
+/* --------------------------------------------------------------max-width 1235px--------------------------------------------------------------  */
+
+@media only screen and (max-width:1235px) {
+
+    .content_expert p {
+        padding: 0% 16% 0% 0%;
+    }
+
+    #user,
+    #userpassword {
+        width: 58%;
+    }
+
+}
+
+/* --------------------------------------------------------------max-width 1080px--------------------------------------------------------------  */
+
+@media only screen and (max-width:1080px) {
+
+    .main_left,
+    .main_right {
+        margin-top: 12%;
+    }
+
+    .logo {
+        width: 10%;
+        padding: 1%;
+        height: 1%;
+    }
+
+    #user,
+    #userpassword {
+        width: 67%;
+        padding: 2.5% 2% 2.5% 2%;
+    }
+
+    .login_button_div {
+        margin-top: 4%;
+    }
+
+    .login_button_div a {
+        margin: 0% 0% 0% 23%;
+    }
+
+}
+
+/* --------------------------------------------------------------max-width 883px--------------------------------------------------------------  */
+
+@media only screen and (max-width: 883px) {
+
+    .main_left,
+    .main_right {
+        margin-top: 15%;
+    }
+
+    .main_left {
+        margin-left: 10%;
+    }
+
+    .logo {
+        width: 11%;
+        margin: 1.5% 0% 0% 0%;
+    }
+
+    .content_expert p {
+        padding: 0% 2% 0% 0%;
+    }
+
+    #user,
+    #userpassword {
+        width: 80%;
+    }
+
+}
+
+/* --------------------------------------------------------------max-width 785px--------------------------------------------------------------  */
+
+@media only screen and (max-width: 785px) {
+
+    .main_left,
+    .main_right {
+        margin-top: 19%;
+    }
+
+    .logo {
+        width: 13%;
+    }
+
+    .company_logo h1 {
+        font-size: 3.7vh;
+        margin-top: 2%;
+    }
+
+    .content_expert p {
+        font-size: 3.7vh;
+    }
+
+    .input_username {
+        margin: 4% 0% 3% 0%;
+    }
+
+    .login_account_div p {
+        font-size: 2.7vh;
+    }
+
+    .login_button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 6% 0% 2% 28%;
+    }
+
+    .login_button_div a {
+        margin-left: 31%;
+    }
+
+    .register_here {
+        margin-top: 4%;
+    }
+}
+
+/* --------------------------------------------------------------max-width 376px--------------------------------------------------------------  */
+
+@media only screen and (max-width: 376px) {
+
+    .main_login_page {
+        flex-direction: column;
+        /* padding: 30px; */
+        /* text-align: center; */
+    }
+
+    .main_left {
+        margin: 9% 0% 0% 0%;
+    }
+
+    .main_right {
+        display: block;
+        margin: 8% 0% 0% 0%;
+    }
+
+    .logo {
+        width: 9%;
+    }
+
+    .company_logo h1 {
+        font-size: 3.5vh;
+        padding: 1% 0% 0% 0%;
+    }
+
+    .main_login_image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .company_logo {
+        justify-content: center;
+    }
+
+    .content_expert p {
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .login_account_div {
+        padding: 0% 0% 0% 5%;
+    }
+
+    .login_account_div p {
+        font-size: 2.5vh;
+        margin: 8% 0% 0% 9%;
+    }
+
+    .input_username,
+    .input_password {
+        text-align: center;
+    }
+
+    #user,
+    #userpassword {
+        width: 70%;
+    }
+
+    .login_button {
+        padding: 10px 50px;
+        margin: 6% 0% 2% 32%;
+    }
+
+    .login_button_div a {
+        margin-left: 37%;
+    }
+
+    .register_here {
+        justify-content: center;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
