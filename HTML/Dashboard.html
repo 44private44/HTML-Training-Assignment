@@ -8,10 +8,248 @@
     <title>Dashboard Page</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 
 <body>
 
+    <!-------------------------------------------------- Dashboard Page ----------------------------------------------------------->
+    <!-------------------------------------------------- Title Header  ----------------------------------------------------------->
+    <section class="container-fluid">
+
+        <section class="main_title_section container-fluid">
+            <div class="main_title_div mt-4">
+                <div class="row">
+                    <div class="col-md-6 title_div1">
+                        <img src="../IMAGES/images/menu-bar.svg" alt="#" class="title_menubar">
+                        <img src="../IMAGES/images/header-logo.svg" alt="#" class="title_headerlogo">
+                        <img src="../IMAGES/images/search-icon.svg" alt="#" class="title_search">
+                        <span class="title_search_text">Search</span>
+                    </div>
+                    <div class="col-md-6 title_div2 text-end">
+                        <img src="../IMAGES/images/notification-icon.svg" alt="#" class="title_notification">
+                        <img src="../IMAGES/images/profile.png" alt="#" class="title_profile_image">
+                        <span class="title_profile_image_text">John Doe</span>
+                        <img src="../IMAGES/images/downward-arrow.svg" alt="#" class="title_downward">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------------------- dashboard row----------------------------------------------------------->
+
+        <section class="main_content_section container-fluid">
+            <section class="main_content_row row">
+
+                <!-------------------------------------------------- Navigation col-2 ----------------------------------------------------------->
+
+                <div class="col-2 row navbar_items" id="navbar_margin">
+
+                    <a href="#" class="dashboard_edit"> <button> <img src="../IMAGES/images/dashboard-active.svg"
+                                alt="Dashboard">Dashboard </button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/graph-default.svg"
+                                alt="Dashboard" class="img-fluid">Analysis</button></button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/inbox-default.svg"
+                                alt="Inbox">Inbox</button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/clock-default.svg"
+                                alt="History">History</button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/user-default.svg"
+                                alt="Users">Users</button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/maintenance-default.svg"
+                                alt="Maintenance">Maintenance</button></a>
+                    <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/setting-default.svg"
+                                alt="Seeting">Seeting</button></a>
+                </div>
+
+                <!-------------------------------------------------- Dashboard content col-10----------------------------------------------------------->
+
+                <div class="col-10 mt-5 row ">
+                    <!-------------------------------------------------- Dashboard icons----------------------------------------------------------->
+
+                    <div>
+                        <h4>Dashboard</h4>
+                    </div>
+                    <div class="d-flex justify-content-between ps-5 pe-5 main_icon_div ">
+                        <div class="d-flex mt-3 ">
+                            <div class="icons_div">
+                                <img src="../IMAGES/images/star.svg" alt="star" class="icons">
+                            </div>
+                            <div class="icons_content_div">
+                                <p class="number">23,456</p>
+                                <p class="number_product">New Products</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 ">
+                            <div class="icons_div">
+                                <img src="../IMAGES/images/new-product.svg" alt="star" class="icons">
+                            </div>
+                            <div class="icons_content_div">
+                                <p class="number">2345</p>
+                                <p class="number_product">Added Products</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 ">
+                            <div class="icons_div">
+                                <img src="../IMAGES/images/star.svg" alt="star" class="icons">
+                            </div>
+                            <div class="icons_content_div">
+                                <p class="number">32,456</p>
+                                <p class="number_product">Total Products</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 ">
+                            <div class="icons_div">
+                                <img src="../IMAGES/images/dollar-filled.svg" alt="star" class="icons">
+                            </div>
+                            <div class="icons_content_div">
+                                <p class="number">5678</p>
+                                <p class="number_product">Today's Sale</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 ">
+                            <div class="icons_div">
+                                <img src="../IMAGES/images/new-product.svg" alt="star" class="icons">
+                            </div>
+                            <div class="icons_content_div">
+                                <p class="number">33,5342</p>
+                                <p class="number_product">Total Sale</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------------------------- Dashboard graph---------------------------------------------------------->
+
+                    <div class="row mt-4 main_graph_div">
+                        <div class="col-8 ">
+                            <div class="d-flex mb-2">
+                                <h4 class="col-8">Sale</h4>
+                                <p class="col-1 ms-3 week_decorate">Weekly</p>
+                                <p class="col-1 ms-3 month_decorate">Monthly</p>
+                                <p class="col-1 ms-3 yearly_decorate">Yearly</p>
+                            </div>
+                            <div>
+                                <img src="../IMAGES/images/data-graph.png" alt="graph" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="country">
+                                <h4>Sales by Country</h4>
+                            </div>
+                            <div class="text-center">
+                                <img src="../IMAGES/images/pie-chart.svg" alt="piechart" class="img-fluid">
+                            </div>
+                            <div class="row ps-2 dots_main_div">
+                                <p class="col-7"><span class="dot_circle dot1"></span> United States of America</p>
+                                <p class="col-5"><span class="dot_circle dot2"></span> Canada</p>
+                                <p class="col-7"><span class="dot_circle dot3"></span> Russia</p>
+                                <p class="col-5"><span class="dot_circle dot4"></span> India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------------------------- Dashboard table---------------------------------------------------------->
+
+                    <div class="mt-3 container-fluid main_table_div_padding">
+                        <div class="d-flex justify-content-between mt-4">
+                            <h4>Invoices</h4>
+                            <p class="viewall_decorate pr-4">View All</p>
+                        </div>
+
+                        <div>
+                            <table class="table main_table">
+                                <thead class="table_header">
+                                    <tr class="text-uppercase">
+                                        <th scope="col">Invoice</th>
+                                        <th scope="col">Company name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Due date</th>
+                                        <th scope="col ">Status</th>
+                                        <th scope="col">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Public Adjusting Firm </td>
+                                        <td>georgie.young@example.com</td>
+                                        <td>24May,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$47800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>547125</td>
+                                        <td>Others </td>
+                                        <td>kenzi.young@example.com</td>
+                                        <td>15 Aug,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$55400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>487905</td>
+                                        <td>Public Adjusting Firm </td>
+                                        <td>soham.young@example.com</td>
+                                        <td>24 May,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$66800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>678201</td>
+                                        <td>Public Adjusting Firm </td>
+                                        <td>kenzi.young@example.com</td>
+                                        <td>2 Oct,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$50800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>789535</td>
+                                        <td>TPA </td>
+                                        <td>jackson.young@example.com</td>
+                                        <td>34 Sep,2020</td>
+                                        <td><button class=" status_button_paid status_button_failed">Failed</button>
+                                        </td>
+                                        <td>$89800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100148</td>
+                                        <td>Public Adjusting Firm </td>
+                                        <td>georgie.young@example.com</td>
+                                        <td>24 May,2020</td>
+                                        <td><button class="status_button_paid status_button_pending">Pending</button>
+                                        </td>
+                                        <td>$67800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>879634</td>
+                                        <td>Fire Department</td>
+                                        <td>kenzi.young@example.com</td>
+                                        <td>30 Sep,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$77800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>987641</td>
+                                        <td>Public Adjusting Firm </td>
+                                        <td>jackson.young@example.com</td>
+                                        <td>34 Oct,2020</td>
+                                        <td><button class="status_button_paid">Paid</button></td>
+                                        <td>$54780</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4578085</td>
+                                        <td>Insurance Carrier</td>
+                                        <td>georgie.young@example.com</td>
+                                        <td>14 Feb,2020</td>
+                                        <td><button class="status_button_paid status_button_failed">Failed</button></td>
+                                        <td>$98800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
 </body>
 
 </html>

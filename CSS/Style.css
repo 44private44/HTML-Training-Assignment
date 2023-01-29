@@ -138,3 +138,182 @@
 }
 
 /* -----------------------------------------------------------------------------------------------------------------------------------  */
+/* -----------------------------------------------------------------------------------------------------------------------------------  */
+
+/* ----------------------------------------------------------------Dashboard page--------------------------------------------------  */
+
+/* ----------------------------------------------------------------Title--------------------------------------------------  */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* .main_title_div {
+    margin: 1.5% 0% 0% 0%;
+} */
+
+.title_menubar {
+    margin-left: 1rem;
+}
+
+.title_headerlogo {
+    margin-left: 2rem;
+}
+
+.title_search {
+    width: 1.25rem;
+    margin-left: 6rem;
+}
+
+.title_search_text {
+    margin-left: 0.3rem;
+}
+
+.title_notification {
+    margin-right: 6rem;
+}
+
+.title_profile_image,
+.title_profile_image_text {
+    margin-right: 0.45rem;
+}
+
+.title_downward {
+    margin-right: 3.5rem;
+}
+
+/* ----------------------------------------------------------------Navbar--------------------------------------------------  */
+
+#navbar_margin {
+    margin: 1.8rem 0rem 0rem 1rem;
+}
+
+.navbar_items {
+    height: 5rem;
+}
+
+.navbar_items a img {
+    width: 1.8rem;
+    margin-right: 0.7rem;
+}
+
+.dashboard_edit button {
+    color: #C8242F;
+    background-color: #FFF3F4;
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem 0.9rem;
+}
+
+/* ------------------------------------------------------------Dashboard Content icons------------------------------------------------------  */
+.main_icon_div {
+    box-shadow: 0px 0px 3px #888888;
+    border-radius: 5px;
+}
+
+.icons {
+    margin-top: 0.6rem;
+}
+
+.icons_content_div {
+    margin-left: 0.9rem;
+}
+
+.number {
+    font-size: 1.5rem;
+    margin: 0%;
+}
+
+.number_product {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* ------------------------------------------------------------Dashboard Content graph------------------------------------------------------  */
+/* .main_graph_div {
+    background: #f7f6f6 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+} */
+
+.week_decorate,
+.month_decorate {
+    color: gray;
+}
+
+.yearly_decorate {
+    border-bottom: 1px solid #c8242f;
+    color: #C8242F;
+    height: 27px;
+    inline-size: auto !important;
+}
+
+/* ------------------------------------------------------------Dashboard Content pie chart------------------------------------------------------  */
+.country,
+.dots_main_div {
+    color: #3E3E3E
+}
+
+.dot_circle {
+    height: 22px;
+    width: 22px;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot1 {
+    background: #C8242F;
+}
+
+.dot2 {
+    background: #A2B86C;
+}
+
+.dot3 {
+    background: #F16C20;
+}
+
+.dot4 {
+    background: #EBC844;
+}
+
+/* ------------------------------------------------------------Dashboard table------------------------------------------------------  */
+.main_table_div_padding {
+    padding-right: 54px !important;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #888888;
+}
+
+.main_table {
+    vertical-align: baseline;
+}
+
+.viewall_decorate {
+    color: #C8242F;
+    height: 27px;
+}
+
+.table_header tr th {
+    color: #ADADAD;
+    /* font: normal normal normal 15px/20px Roboto; */
+}
+
+.status_button_paid {
+    background: #EBFFEF 0% 0% no-repeat padding-box;
+    color: #3CDD5F;
+    border: none;
+    border-radius: 4px;
+    padding: 1px 9px 1px 9px;
+}
+
+.status_button_failed {
+    background: #FFF5F5 0% 0% no-repeat padding-box;
+    color: #FF4545;
+}
+
+.status_button_pending {
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    color: #BABABA;
+}
