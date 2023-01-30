@@ -317,3 +317,196 @@
     background: #F8F8F8 0% 0% no-repeat padding-box;
     color: #BABABA;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------  */
+
+/* ------------------------------------------------------------Inner page------------------------------------------------------  */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c8242f !important;
+    box-shadow: none !important;
+}
+
+input[type=radio]#Red,
+input[type=radio]#Red2,
+input[type="checkbox"]#Red3,
+input[type="checkbox"]#Red4 {
+    accent-color: #c8242f;
+}
+
+/* 
+input[type="checkbox"]#Red3 {
+
+    accent-color: #FF0000;
+} */
+
+
+/*  */
+input[type=file]#formFile {
+    border: none;
+    display: none;
+}
+
+#formFile::before {
+    content: "Upload";
+}
+
+/* ------------------------------------------------------------Upload file------------------------------------------------------  */
+.upload_button {
+    background-color: white;
+    border: none;
+    color: #c8242f;
+    border: 2px solid #c8242f;
+    border-radius: 50px;
+    padding: 6px 21px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.upload_button label {
+    cursor: pointer;
+}
+
+/*  */
+.lable_color {
+    color: #3E3E3E;
+
+}
+
+.analysis_edit button {
+    color: #C8242F;
+    background-color: #FFF3F4;
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem 0.9rem;
+}
+
+.one_column_p,
+.other_elements {
+    font-size: 18px;
+    color: #3E3E3E;
+    font-weight: 500;
+}
+
+.special_disabled_border {
+    border-style: dashed;
+}
+
+.select_decorate,
+.valid_data_text_edit {
+    color: #6c757d;
+}
+
+.valid_data_text_edit {
+    font-size: 0.9rem;
+}
+
+.four_column_focus input:focus~.valid_data_text_edit {
+    color: #c8242f;
+}
+
+.other_elements {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------------------------------------------error buttons------------------------------------------------------  */
+
+.error_buttons {
+    text-align: left;
+    font-size: 1rem;
+    color: #FF3535;
+    border: none;
+    box-shadow: none !important;
+    border: 2px solid #FF3535;
+    padding-left: 20px;
+}
+
+.error_buttons:hover {
+    cursor: default;
+}
+
+.error_buttons:focus {
+    color: #FF3535;
+    border: none;
+    box-shadow: none !important;
+    border: 2px solid #FF3535;
+}
+
+.error_buttons img {
+    vertical-align: middle;
+    width: 1.5rem;
+    margin-right: 6px;
+}
+
+#info_button {
+    color: #00B9E1;
+    border: 2px solid #00B9E1;
+}
+
+#warning_buttons {
+    color: #FFA800;
+    border: 2px solid #FFA800;
+}
+
+#success_button {
+    color: #00AF27;
+    border: 2px solid #00AF27;
+}
+
+/* ------------------------------------------------------------Call to action file------------------------------------------------------  */
+#call_to_action:hover {
+    background: #C8242F;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------------------------------ Tabs ------------------------------------------------------  */
+.tabs_main_ul {
+    border-bottom: 2px solid #6c757d;
+}
+
+#default_border {
+    border-bottom: 2px solid #C8242F;
+
+}
+
+#default_border a {
+    color: #C8242F;
+}
+
+.tabs_main_ul li a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.tabs_main_ul li a:hover {
+    border-bottom: 2px solid #C8242F;
+
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+    border-bottom: 3px solid #C8242F;
+    color: #C8242F;
+}
+
+.tabs_main_ul li a:active {
+    border: none;
+    border-bottom: 2px solid #C8242F;
+}
+
+/* .nav-tabs .nav-link:visited {
+    border-bottom: 3px solid #C8242F;
+    color: #C8242F;
+} */
+#tab2,
+#tab3 {
+    visibility: hidden;
+    display: none;
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------  */
+/* ------------------------------------------------------------------------------------------------------------------  */
