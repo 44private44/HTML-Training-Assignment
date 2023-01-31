@@ -157,6 +157,10 @@
     margin-left: 1rem;
 }
 
+#hamburger2 {
+    display: none;
+}
+
 .title_headerlogo {
     margin-left: 2rem;
 }
@@ -216,6 +220,7 @@
     box-shadow: 0px 0px 4px grey;
     border: none;
     border-radius: 10px;
+    justify-content: center;
 }
 
 .icons {
@@ -254,6 +259,17 @@
     inline-size: auto !important;
 }
 
+.graph_decorate_border {
+    box-shadow: 0px 0px 4px grey;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.piechart_decorate {
+    padding: 1rem;
+    padding-left: 1rem;
+}
+
 /* ------------------------------------------------------------Dashboard Content pie chart------------------------------------------------------  */
 .country,
 .dots_main_div {
@@ -285,12 +301,20 @@
 }
 
 /* ------------------------------------------------------------Dashboard table------------------------------------------------------  */
-.main_table_div_padding {
+.main_table_border {
     padding-right: 54px !important;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 5px;
     box-shadow: 0px 0px 3px #888888;
+    margin-top: 3rem !important;
 }
+
+/* .main_table_div_padding {
+    padding-right: 54px !important;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #888888;
+} */
 
 .main_table {
     vertical-align: baseline;
@@ -358,6 +382,11 @@ input[type=file]#formFile {
 #formFile::before {
     content: "Upload";
 }
+
+.analysis_edit button {
+    background-color: #FFF3F4 !important;
+}
+
 
 /* ------------------------------------------------------------Upload file------------------------------------------------------  */
 .upload_button {
@@ -473,6 +502,10 @@ input[type=file]#formFile {
     border-bottom: 2px solid #6c757d;
 }
 
+#color_change:hover {
+    border: none;
+}
+
 #default_border {
     border-bottom: 2px solid #C8242F;
 
@@ -500,20 +533,41 @@ input[type=file]#formFile {
 }
 
 .tabs_main_ul li a:active {
-    border: none;
+    /* border: none; */
     border-bottom: 2px solid #C8242F;
 }
 
+/* 
 /* .nav-tabs .nav-link:visited {
     border-bottom: 3px solid #C8242F;
     color: #C8242F;
 } */
-#tab2,
-#tab3 {
-    visibility: hidden;
+#tab2 {
     display: none;
-    overflow: visible;
+    /* overflow: visible; */
+}
+
+#tab3 {
+    display: none;
+
 }
 
 /* ------------------------------------------------------------------------------------------------------------------  */
 /* ------------------------------------------------------------------------------------------------------------------  */
+
+/* #hamburger,
+#hamburger2 {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .disabledbtn {
+        display: none;
+    }
+
+
+    #hamburger,
+    #hamburger2 {
+        display: block;
+    }
+} */

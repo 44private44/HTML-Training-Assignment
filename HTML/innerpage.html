@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Responsive.css">
+    <link rel="stylesheet" href="../JS/bootstrap.bundle.min.js">
 </head>
 
 <body>
@@ -19,7 +20,11 @@
             <div class="main_title_div mt-4">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 title_div1 ">
-                        <img src="../IMAGES/images/menu-bar.svg" alt="#" onclick="hamburger()" class="title_menubar">
+                        <img src="../IMAGES/images/menu-bar.svg" alt="#" onclick="hamburger()" id="hamburger"
+                            class="title_menubar">
+                        <img src="../IMAGES/images/menu-bar.svg" alt="#" onclick="hamburger2()" id="hamburger2"
+                            class="title_menubar">
+
                         <img src="../IMAGES/images/header-logo.svg" alt="#" class="title_headerlogo">
                         <img src="../IMAGES/images/search-icon.svg" alt="#" class="title_search">
                         <span class="title_search_text">Search</span>
@@ -45,7 +50,7 @@
                     <a href="../HTML/Dashboard.html" class=""> <button class="btn bg-transparent"> <img
                                 src="../IMAGES/images/dashboard-default.svg" alt="Dashboard" class="img-fluid">Dashboard
                         </button></a>
-                    <a href="#" class="analysis_edit"> <button class="btn bg-transparent"> <img
+                    <a href="#" class="analysis_edit dashboard_edit"> <button class="btn bg-transparent "> <img
                                 src="../IMAGES/images/graph-active.svg" alt="Dashboard"
                                 class="img-fluid">Analysis</button></button></a>
                     <a href="#"> <button class="btn bg-transparent"> <img src="../IMAGES/images/inbox-default.svg"
@@ -62,7 +67,7 @@
                 <!-------------------------------------------------- Dashboard content col-10----------------------------------------------------------->
 
                 <div class="col-md-10 mt-5 row content_center_responsive">
-                    <div class="mr-5 responsive_mobile_top">
+                    <div class="mr-5 responsive_mobile_top " id="margin_top_responsive">
                         <h4>Analysis</h4>
                     </div>
                     <div class="col-11 ms-4 mt-3">
@@ -234,10 +239,10 @@
                             </div>
                         </div>
                         <div class="d-flex snackbar_responsive">
-                            <div class="col pe-4 padding_responsive"">
+                            <div class="col pe-4 padding_responsive">
                                 <button class=" button form-control error_buttons mb-4" id="warning_buttons"> <img
-                                    src="../IMAGES/images/warning-icon.svg" alt="error" class="img-fluid">This is
-                                an error Messsage</button>
+                                        src="../IMAGES/images/warning-icon.svg" alt="error" class="img-fluid">This is
+                                    an error Messsage</button>
                             </div>
                             <div class="col ">
                                 <button class="button form-control error_buttons mb-4" id="success_button"> <img
@@ -262,21 +267,22 @@
                                 </button>
                             </div>
                         </div>
+                        <!--  -->
+
+                        <!--  -->
                         <div>
                             <p class="other_elements mt-3">Tabs</p>
                         </div>
                         <ul class="nav nav-tabs tabs_main_ul">
                             <li class="nav-item" id="default_border">
-                                <a class="nav-link " href="#tab1">Tab 1</a>
+                                <a class="nav-link " href="#tab1" onclick="tab1()" id="color_change">Tab 1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#tab2"
-                                    onclick="document.getElementById('tab2').style.visibility='visible'">Tab
+                                <a class="nav-link " href="#tab2" onclick="tab2()" id="color_change2">Tab
                                     2</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#tab3"
-                                    onclick="document.getElementById('tab3').style.display='contents'">Tab
+                                <a class="nav-link " href="#tab3" onclick="tab3()" id="color_change3">Tab
                                     3</a>
                             </li>
                         </ul>
@@ -291,7 +297,8 @@
                                 sint. Deserunt, ab ratione!</p>
                         </div>
                         <div class="mt-3" class="select_decorate" id="tab2">
-                            <p class="select_decorate">Lorem2 , ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            <p class="select_decorate">Lorem2 , hi i am soham modi ipsum dolor sit amet consectetur
+                                adipisicing elit. Illo
                                 natus non,
                                 rem a culpa
                                 quibusdam consectetur voluptates minima aut eligendi beatae quas perferendis, nobis
@@ -300,12 +307,12 @@
                             </p>
                         </div>
                         <div class="mt-3" class="select_decorate" id="tab3">
-                            <p class="select_decorate">Lorem2 , ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            <p class="select_decorate">Lorem3 , ipsum dolor sit amet consectetur adipisicing elit. Illo
                                 natus non,
                                 rem a culpa
                                 quibusdam consectetur voluptates minima aut eligendi beatae quas perferendis, nobis
-                                repellat magni et labore atque ratione! Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Accusantium id voluptate laborum voluptates qui quod debitis
+                                repellat magni et labore atque ratione! Lntium id voluptate laborum voluptates qui quod
+                                debitis
                             </p>
                         </div>
                     </div>
@@ -323,6 +330,47 @@
     })
     function hamburger() {
         document.getElementById("navbar_margin").style.display = "block";
+        document.getElementById("hamburger2").style.display = "block";
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("margin_top_responsive").style.marginTop = '4rem';
+    }
+    function hamburger2() {
+        document.getElementById("navbar_margin").style.display = "none";
+        document.getElementById("hamburger2").style.display = "none";
+        document.getElementById("hamburger").style.display = "block"
+        document.getElementById("margin_top_responsive").style.marginTop = '0px';
+    }
+    function tab1() {
+        document.getElementById("tab1").style.display = "block";
+        document.getElementById("tab2").style.display = "none";
+        document.getElementById("tab3").style.display = "none";
+        document.getElementById("color_change").style.color = "#C8242F";
+        document.getElementById("color_change2").style.color = "#6c757d";
+        document.getElementById("color_change2").style.borderBottom = "none";
+        document.getElementById("color_change3").style.color = "#6c757d";
+        document.getElementById("color_change3").style.borderBottom = "none";
+    }
+    function tab2() {
+        document.getElementById("tab1").style.display = "none";
+        document.getElementById("tab2").style.display = "block";
+        document.getElementById("tab3").style.display = "none";
+        document.getElementById("color_change").style.color = "#6c757d";
+        document.getElementById("color_change2").style.color = "#C8242F";
+        document.getElementById("color_change2").style.borderBottom = "2px solid #C8242F";
+        document.getElementById("color_change3").style.color = "#6c757d";
+        document.getElementById("color_change3").style.borderBottom = "none";
+        document.getElementById("default_border").style.border = "none";
+    }
+    function tab3() {
+        document.getElementById("tab1").style.display = "none";
+        document.getElementById("tab2").style.display = "none";
+        document.getElementById("tab3").style.display = "block";
+        document.getElementById("color_change").style.color = "#6c757d";
+        document.getElementById("color_change3").style.color = "#C8242F";
+        document.getElementById("color_change3").style.borderBottom = "2px solid #C8242F";
+        document.getElementById("color_change2").style.color = "#6c757d";
+        document.getElementById("color_change2").style.borderBottom = "none";
+        document.getElementById("default_border").style.border = "none";
     }
 </script>
 
