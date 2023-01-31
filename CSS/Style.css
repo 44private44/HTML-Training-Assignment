@@ -207,9 +207,15 @@
 }
 
 /* ------------------------------------------------------------Dashboard Content icons------------------------------------------------------  */
-.main_icon_div {
+/* .main_icon_div {
     box-shadow: 0px 0px 3px #888888;
     border-radius: 5px;
+} */
+.icon_box_decorate {
+    padding: 0.7rem 0.9rem 0.4rem 0.7rem;
+    box-shadow: 0px 0px 4px grey;
+    border: none;
+    border-radius: 10px;
 }
 
 .icons {
@@ -488,8 +494,9 @@ input[type=file]#formFile {
 
 .nav-tabs .nav-link:hover {
     border: none;
-    border-bottom: 3px solid #C8242F;
+    border-bottom: 2px solid #C8242F;
     color: #C8242F;
+    overflow: visible;
 }
 
 .tabs_main_ul li a:active {
@@ -505,7 +512,7 @@ input[type=file]#formFile {
 #tab3 {
     visibility: hidden;
     display: none;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------  */
